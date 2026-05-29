@@ -1,0 +1,6 @@
+.yf_cache/
+outputs/.matplotlib/
+outputs_smoke/
+reports/rendered_detailed/
+__pycache__/
+*.pyc

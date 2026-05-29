@@ -1,0 +1,48 @@
+{
+  "data_source": "Yahoo Finance download for AAPL",
+  "ticker": "AAPL",
+  "start": "2015-01-01",
+  "end": "2025-12-31",
+  "rows": 2765,
+  "features": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Adj Close",
+    "Volume",
+    "Log_Return",
+    "MA5_Ratio",
+    "MA20_Ratio",
+    "Volatility20",
+    "Volume_Change"
+  ],
+  "sequence_length": 60,
+  "train_windows": 1824,
+  "validation_windows": 323,
+  "test_windows": 537,
+  "device": "cpu",
+  "loss_function": "HuberLoss(delta=1.0)",
+  "learning_rate": 0.0005,
+  "epochs_requested": 20,
+  "epochs_trained": 6,
+  "best_epoch": 1,
+  "early_stopping_patience": 5,
+  "seed": 740,
+  "lstm": {
+    "mae": 2.411050319671631,
+    "rmse": 3.584471026650035,
+    "mse": 12.848432540893555,
+    "mape_percent": 1.1265239715576172,
+    "r2": 0.9842647314071655,
+    "directional_accuracy": 0.5456238361266295
+  },
+  "naive_baseline": {
+    "mae": 2.421173334121704,
+    "rmse": 3.5849137184901054,
+    "mse": 12.851606369018555,
+    "mape_percent": 1.1297529935836792,
+    "r2": 0.9842607975006104,
+    "directional_accuracy": 0.00186219739292365
+  }
+}
